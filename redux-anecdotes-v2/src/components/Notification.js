@@ -11,10 +11,9 @@ const Notification = (props) => {
   const { notification } = props
 
   return (
-    notification.length === 0 ? null :
-      <div style={style}>
-        {notification}
-      </div>
+    notification.length === 0
+      ? null
+      : <div style={style}>{notification}</div>
   )
 }
 
